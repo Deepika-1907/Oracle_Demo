@@ -13,7 +13,7 @@ public class MailPage extends TestBase{
 	
 final WebDriver driver;
 
-	@FindBy(how = How.CSS, using = "#nav-bar-CORRESPONDENCE-CORRESPONDENCE-CREATEMAIL")
+	@FindBy(how = How.XPATH, using = "//div[@id='nav-bar-CORRESPONDENCE-CORRESPONDENCE-CREATEMAIL']")
 
 	public WebElement newMail;
 	
@@ -29,7 +29,7 @@ final WebDriver driver;
 
 	public WebElement subject;
 	
-	@FindBy(how = How.TAG_NAME, using = "button")
+	@FindBy(how = How.XPATH, using = "//button[@id='btnsend']")
 
 	public WebElement sendButton;
 	
